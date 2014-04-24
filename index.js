@@ -62,7 +62,7 @@ GoogleContacts.prototype._get = function (params, cb) {
     }
   };
 
-  console.log(req);
+  //console.log(req);
 
   https.request(req, function (res) {
     var data = '';
@@ -132,8 +132,8 @@ GoogleContacts.prototype._saveContactsFromFeed = function (feed) {
       // property not available...
     }
   });
-  console.log(self.contacts);
-  console.log(self.contacts.length);
+  //console.log(self.contacts);
+  //console.log(self.contacts.length);
 }
 
 GoogleContacts.prototype._buildPath = function (params) {
